@@ -1,5 +1,5 @@
 def authenticate_user(accounts, name, pin):
-    """Authenticates the user and returns the account dictionary if successful."""
+    """Step 1: Authenticates the user and returns the account dictionary if successful."""
     for account in accounts:
         if account["name"].lower() == name.lower() and account["pin"] == pin:
             return account
@@ -54,3 +54,4 @@ def transaction_history(accounts, name, pin):
             print("No transactions to display.")
     else:
         print("Invalid name or PIN.")
+
